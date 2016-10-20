@@ -1,0 +1,162 @@
+
+
+    <div class="col-xl-12">
+<nav class="navbar navbar-fixed-top">
+      <img id="logo" height="150" width="auto" src="images/logo.svg">
+
+      <a class="nav-link home" id ="notactivelink">HOME</a>
+
+      <a class="nav-link brownie" id="notactivelink" href="#">DIENSTEN</a>
+
+      <a class="nav-link groenie" id="notactivelink" href="#">OVER-ONS</a>
+
+      <a class="nav-link foot" id="notactivelink" href="#">CONTACT</a>
+
+
+</nav>
+    </div>
+
+    <div class="col-xl-12">
+      <div id="fixedup" class="card first">
+        <div class="card-block">
+          <h4 class="card-title fadein1"></h4>
+          <p class="card-text fadein2">
+            <div class="tekstBallon">
+<div class="firstblockleft">
+<p>
+Birsken biedt Verzuimoplossingen en Loopbaanbegeleiding <br><br>
+ 1. Verzuimoplossingen voor u als werkgever <br><br>
+“De beste manier om je medewerker te helpen is niet door hem beter te willen maken, maar om hem te helpen terug te keren naar werk.”
+<br><br>
+Verzuimkosten kunnen omlaag en complexe casuïstiek kan worden opgelost.
+<br><br>
+<p id="vink">&#10004;</p>Op Maat Begeleiding & Casemanagement
+<br>
+<p id="vink">&#10004;</p>Op Maat Workshops & Training
+</p>
+</div>
+
+<div class="firstblockright">
+
+<div id="one">
+Is er sprake van een verzuimcasus waar even hulp bij nodig is?
+</div>
+
+<div id="two">
+Casemanagement
+</div>
+
+<div id="three">
+Is er sprake van oplopende schadelast? Doel: Besparing op verzuimkosten?
+</div>
+
+<div id="four">
+Birsken biedt Directe Ondersteuning
+</div>
+
+<div id="five">
+Birsken biedt Individuele Arbeidsmarkttrajecten
+</div>
+
+<div id="six">
+Birsken biedt Op Maat Verzuim Oplossingen
+</div>
+
+
+<div id="seven">
+Een medewerker moet écht geholpen worden met een 2e spoortraject waarbij plaatsing wordt gerealiseerd?
+</div>
+
+<div id="eight">
+Re-integratie 2e spoor
+</div>
+
+<div id="nine">
+Analyse, Advies, Training
+</div>
+
+
+</div>
+            </div>
+
+<center><div class="triangle"></div></center>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-12">
+      <div class="card second">
+        <div class="card-block">
+          <h4 class="card-title"></h4>
+          <p class="card-text"><center><div class="secondtekstballon">
+            <p>tekst</p>
+        </div></center>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-12">
+      <div class="card third">
+        <div class="card-block">
+          <h4 class="card-title"></h4>
+          <p class="card-text"><center><div class="tekstballon">
+            <p>tekst</p>
+        </div></center>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-xl-12">
+      <div class="card fourth">
+        <div class="card-block">
+          <h4 class="card-title"></h4>
+          <p class="card-text"><center><div class="tekstballon">
+            <p>tekst</p>
+        </div></center>
+          </p>
+        </div>
+      </div>
+      <div class="voeten">Hoi</div>
+    </div>
+
+
+
+  <script>
+$(document).ready(function(){
+$('.fadein1').hide();
+$('.fadein2').hide();
+
+
+$('.fadein1').fadeIn(2000);
+setTimeout(function () {
+  $('.fadein2').fadeIn(1000)
+}, 1500);
+
+
+$(".home").click(function(event){
+event.preventDefault();
+$('html, body').stop().animate({ scrollTop: $('.first').offset().top - 175 }, 1500, 'easeInOutExpo');
+});
+
+$(".brownie").click(function(event){
+event.preventDefault();
+$('html, body').stop().animate({ scrollTop: $('.second').offset().top - 175 }, 1500, 'easeInOutExpo');
+});
+
+$(".groenie").click(function(event){
+event.preventDefault();
+$('html, body').stop().animate({ scrollTop: $('.third').offset().top - 175 }, 1500, 'easeInOutExpo');
+});
+
+$(".foot").click(function(event){
+event.preventDefault();
+$('html, body').stop().animate({ scrollTop: $('.fourth').offset().top - 175 }, 1500, 'easeInOutExpo');
+});
+
+
+});
+</script>
