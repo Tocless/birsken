@@ -1,0 +1,291 @@
+@font-face {
+font-family: arkhip;
+src: url('arial.ttf');
+}
+
+@font-face {
+font-family: titi;
+src: url('arial.ttf');
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 30px; }
+
+ a {
+  font-family: arkhip;
+}
+
+ h6, h5, h4, h3, h2, h1, span{
+   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+ }
+
+ .card-text {
+   font-weight: normal;
+   color: white;
+   font-family: titi;
+ }
+
+.card-title{
+  font-weight: normal;
+  color: white;
+  font-family: arkhip;
+}
+
+.navbar {
+  background: white;
+}
+
+
+.voeten {
+  background: #FFFFFF;
+  height: 10vh;
+}
+
+
+#activenavlink {
+  color: #b14374;
+}
+
+
+#notactivelink {
+  color: #962557;
+}
+
+.link {
+margin-bottom: -20px;
+}
+
+nav  {
+  word-spacing: 80px;
+  box-shadow: 0px 0px 50px #282828;
+
+}
+
+
+
+#notactivelink:hover {
+  color: #b14374;
+}
+
+nav {
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 0px;
+}
+
+.third {
+  background: #3E6AAF;
+  height: 100vh;
+}
+
+.fourth {
+  background: #962557;
+  height: 110vh;
+}
+
+
+.first {
+  background: #3E6AAF;
+  height: 100vh;
+}
+
+
+.second {
+  background: #FFFFFF;
+  height: 100vh;
+}
+
+.col-xl-12 {
+  width: 102.50%;
+  margin-left: -1.25%;
+}
+
+#logo {
+margin-bottom: 15px;
+}
+
+#fixedup {
+  margin-top: 170px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.tekstBallon {
+  background-color: white;
+  margin-left: auto;
+  margin-right:auto;
+  width: auto;
+  height: 80vh;
+  font-size: calc(0.71vw + 0.71vh + 0.2vmin);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10vh 10vh 0 0;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+/* HIER KOMT DIE KKR MENU */
+
+nav a {
+  padding-top: 6% !important;
+  padding-bottom: 6% !important;
+  font-size: 18px;
+}
+
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+  -webkit-transition: all 0.3s ease;
+}
+
+.navbar-brand {
+
+}
+
+nav.navbar.shrink {
+  min-height: 35px;
+}
+
+nav.shrink a {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  font-size: 15px;
+  -webkit-transition: all 0.3s ease;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 25px;
+  -webkit-transition: all 0.3s ease;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+  -webkit-transition: all 0.3s ease;
+}
+
+/* Grow */
+nav.navbar.grow {
+  min-height: 35px;
+}
+
+nav.grow a {
+  padding-top: 22px !important;
+  padding-bottom: 22px !important;
+  font-size: 15px;
+  -webkit-transition: all 0.3s ease;
+}
+
+nav.grow .navbar-brand {
+  font-size: 25px;
+  -webkit-transition: all 0.3s ease;
+}
+
+nav.grow .navbar-toggle {
+  padding: 9px 22px;
+  margin: 8px 15px 8px 0;
+  -webkit-transition: all 0.3s ease;
+}
+
+
+nav.navbar{
+  background-color: white;
+// Animation
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  width: 35%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo shrink */
+.logoshrink {
+  width: 22.5%;
+  height: auto;
+}
+
+.logoshrink {
+  -webkit-transition: all 0.3s ease;
+}
+
+/* Logo grow */
+.logogrow {
+  width: 35%;
+  height: auto;
+}
+
+.logogrow {
+  -webkit-transition: all 0.3s ease;
+}
+
+.social {
+  text-align: center;
+  margin-top: 7.5%;
+  margin-right: 5%;
+  width: 35%;
+  height: auto;
+}
+
+.navbar1 {
+  margin-top: 10%;
+  margin-right: 5%;
+}
+
+
+/* social shrink */
+.socialshrink {
+  width: 22.5%;
+  height: auto;
+}
+
+.socialshrink {
+  -webkit-transition: all 0.3s ease;
+}
+
+/* social grow */
+.socialgrow {
+  width: 35%;
+  height: auto;
+}
+
+.socialgrow {
+  -webkit-transition: all 0.3s ease;
+}
+
+/* social shrink */
+.navbar1shrink {
+  width: 22.5%;
+  height: auto;
+  
+}
+
+.navbar1shrink {
+  -webkit-transition: all 0.3s ease;
+}
+
+/* social grow */
+.navbar1grow {
+  width: 35%;
+  height: auto;
+}
+
+.navbar1grow {
+  -webkit-transition: all 0.3s ease;
+}
+

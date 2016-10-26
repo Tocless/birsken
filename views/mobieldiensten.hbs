@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{title}}</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mobieldiensten.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/alertify.core.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/alertify.default.css">
+    <script src="/javascripts/alertify.js"></script>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/javascripts/rotate.js"></script>
+
+    <meta name="theme-color" content="#3E6AAF">
+
+
+  </head>
+
+  <body>
+    <!-- NAVIGATIE BALK -->
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- logo -->
+      <div class="navbar-header">
+        <!--  -->
+        <a class="pull-right navbar-brand" href="#">
+          <img src="/images/LOGOBIRSKEN2.svg"/>
+        </a>
+
+        <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="mainnavbar">
+        <ul class="nav navbar-nav">
+
+          <li><a id="hamburger" href="/mobiel">home</a></li>
+          <li><a id="hamburger" href="/mobiel/over">over</a></li>
+          <li><a id="hamburger" href="/mobiel/diensten">diensten</a></li>
+          <li><a id="hamburger" href="/mobiel/contact">contact</a></li>
+
+        </ul>
+      </nav>
+
+    <div class="container-fluid">
+
+      <p class="diensten-text">
+        Birsken biedt Verzuimoplossingen en Loopbaanbegeleiding<br><br>
+        Verzuimoplossingen voor u als werkgever<br><br>
+        “De beste manier om je medewerker te helpen is niet door
+        hem beter te willen maken, maar om hem te helpen terug te
+        keren naar werk.”<br><br>
+        Verzuimkosten kunnen omlaag en complexe casuïstiek
+        kan worden opgelost.<br><br>
+        <span>&#10004;</span>Op Maat Begeleiding & Casemanagement
+        <span>&#10004;</span>Op Maat Workshops & Training
+      </p>
+
+      <center><img class="icoon2" src="/images/icoon2.svg"></center>
+
+<div class="diensten-text kontje">
+    Loopbaanbegeleiding<br><br>
+  “Een op maat traject waarvan uitgegaan wordt van benutting
+  van de mogelijkheden biedt de beste kans op werk”<br><br>
+  Als het gaat om het vinden van een nieuwe werkplek is een
+  veredelde standaard sollicitatietraining niet goed genoeg.
+  Eerst goed kijken naar het doel van de individu, vervolgens
+  pas de middelen bepalen.<br><br>
+  Re-integratie met resultaat<br>
+  Outplacement met resultaat<br>
+  Loopbaancoaching met resultaat<br>
+</div>
+
+  </div>
+    <script>
+    $(document).ready(function(){
+      var scroller = true
+
+    $('body').bind('touchmove', function(e) {
+      var scrolldowntest = $('nav').scrollTop();
+     var scrolldown = $(this).scrollTop();
+     if (scroller) {
+       if (scrolldown >= 130) {
+         $(".icoon2").rotate({angle: 0, animateTo:-360, duration:3000});
+         scroller = false;
+       }
+     }
+});
+});
+
+    </script>
+
+
+
+
+  </body>
+</html>

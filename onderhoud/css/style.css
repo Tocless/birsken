@@ -1,0 +1,185 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background: url("../img/background.jpg");
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  	font-size: 20px;
+  	font-style: normal;
+  	font-variant: normal;
+  	font-weight: 500;
+  	line-height: 26.4px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    no-repeat center center fixed;
+    webkit-background-size: cover;
+    moz-background-size: cover;
+    o-background-size: cover;
+    background-size: cover;
+}
+
+.header {
+    background-color: #EDEFF9;
+    height: 225px;
+    box-shadow: 0px 0px 100px #282828;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+  background: url("../img/birsken.png");
+  width: 649px;
+  height: 210px;
+  margin-left: auto;
+  min-width: 100px;
+  margin-right: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+	text-align: center
+  width: 650px;
+  height: auto;
+}
+
+.bubble {
+  border-radius: 10px;
+  background: #E0303B;
+  width: 640px;
+  text-align: center;
+  padding: 5px;
+  height: auto;
+  margin-top: 175px;
+  box-shadow: 0px 0px 10px #000000;
+}
+
+.timerBubble {
+  border-radius: 10px;
+  background: #E0303B;
+  width: 640px;
+  text-align: center;
+  padding: 5px;
+  height: auto;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px #000000;
+}
+
+.contactBubble {
+  border-radius: 10px;
+  background: #E0303B;
+  width: 640px;
+  text-align: center;
+  padding: 5px;
+  height: auto;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px #000000;
+}
+
+h1 {
+    border-bottom: 1px solid #d9d9d9;
+}
+h2{
+  position: relative;;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+h2:before{
+  content: '\2192';
+  position: absolute;
+  left: -20px;
+  font-size: 0.9em;
+}
+a {
+    color: #be2221;
+    text-decoration: none;
+}
+
+.callback,
+.simple,
+.offset {
+  font-size: 20px;
+  background: #27ae60;
+  padding: 0.5em 0.7em;
+  color: #ecf0f1;
+  margin-bottom: 50px;
+  -webkit-transition: background 0.5s ease-out;
+  transition: background 0.5s ease-out;
+}
+.offset {
+  margin-bottom: 10px;
+}
+.callback{
+  cursor: pointer;
+}
+.ended {
+  background: #c0392b;
+}
+
+.styled div {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1;
+  text-align: right;
+}
+/* IE7 inline-block hack */
+*+html .styled div{
+  display: inline;
+  zoom: 1;
+}
+.styled div:first-child {
+  margin-left: 0;
+}
+.styled div span {
+  display: block;
+  border-top: 1px solid #cecece;
+  padding-top: 3px;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: left;
+}

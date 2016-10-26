@@ -1,0 +1,6 @@
+rood: #e0303b
+wit-blauw: #edeff9
+blauw: #3e6aaf
+violet: #972557
+
+Arial Rounded MT Bold

@@ -1,0 +1,469 @@
+/* Desktops and laptops ----------- */
+/*@media only screen and (min-width : 480px) {*/
+
+
+
+@font-face {
+  font-family: arkhip;
+  src: url('arial.ttf');
+}
+
+@font-face {
+  font-family: titi;
+  src: url('arial.ttf');
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  font-family: arkhip;
+}
+
+h6, h5, h4, h3, h2, h1, span {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.card-text {
+  font-weight: normal;
+  color: white;
+  font-family: titi;
+}
+
+.card-title {
+  font-weight: normal;
+  color: white;
+  font-family: arkhip;
+}
+
+.navbar {
+  background: white;
+}
+
+.voeten {
+  background: #FFFFFF;
+  height: 10vh;
+}
+
+#activenavlink {
+  color: #b14374;
+}
+
+#notactivelink {
+  color: #962557;
+}
+
+.link {
+  margin-bottom: -20px;
+}
+
+nav {
+  word-spacing: 80px;
+  box-shadow: 0px 0px 50px #282828;
+
+}
+
+#notactivelink:hover {
+  color: #b14374;
+}
+
+nav {
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 0px;
+}
+
+.third {
+  background: #3E6AAF;
+  height: 100vh;
+}
+
+.fourth {
+  background: #962557;
+  height: 110vh;
+}
+
+.first {
+  background: #3E6AAF;
+  height: 100vh;
+}
+
+.second {
+  background: #FFFFFF;
+  height: 100vh;
+}
+
+.col-xl-12 {
+  width: 102.50%;
+  margin-left: -1.25%;
+}
+
+#logo {
+  margin-bottom: 15px;
+}
+
+#fixedup {
+  margin-top: 170px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.tekstBallon {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+  height: 70vh;
+  border-radius: 10px 10px 10px 10px;
+  font-size: calc(0.60vw + 0.60vh + 0.2vmin);
+}
+
+.tekstBallon p {
+  z-index: 1;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100px 0 100px;
+  border-color: white transparent transparent transparent;
+}
+
+.firstblockleft {
+  width: 50%;
+  padding: 10%;
+  padding-top: 5%;
+  background: white;
+  float: left;
+  color: #3E6AAF;
+  font-weight: bold;
+  font-size: 90%;
+  border-radius: 10px 10px 10px 10px;
+  max-height: 100%;
+}
+
+.firstblockright {
+  border-radius: 10px 10px 10px 10px;
+  float: left;
+  width: 50%;
+  padding-top: 10%;
+  background: white;
+  max-height: 100%;
+}
+
+#one {
+  display: inline-block;
+  margin: 5px;
+  border-radius: 10px 0px 0px 0px;
+}
+
+#two {
+  display: inline-block;
+  margin: 5px;
+}
+
+#three {
+  border-radius: 0px 10px 0px 0px;
+  display: inline-block;
+  margin: 5px;
+}
+
+#four {
+  display: inline-block;
+  margin: 5px;
+}
+
+#five {
+  display: inline-block;
+  margin: 5px;
+}
+
+#six {
+  display: inline-block;
+  margin: 5px;
+}
+
+#seven {
+  display: inline-block;
+  margin: 5px;
+  border-radius: 0px 0px 0px 10px;
+}
+
+#eight {
+  display: inline-block;
+  margin: 5px;
+}
+
+#nine {
+  display: inline-block;
+
+  margin: 5px;
+  border-radius: 0px 0px 10px 0px;
+
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
+  width: 25%;
+  height: 90px;
+  text-align: center;
+  float: left;
+  background: #3E6AAF;
+  color: white;
+  font-weight: bold;
+  font-size: calc(0.40vw + 0.40vh + 0.2vmin);
+}
+
+#vink {
+  display: inline-block;
+  color: red;
+}
+
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 480px) {
+
+
+  @font-face {
+    font-family: arkhip;
+    src: url('arial.ttf');
+  }
+
+  @font-face {
+    font-family: titi;
+    src: url('arial.ttf');
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  a {
+    font-family: arkhip;
+  }
+
+  h6, h5, h4, h3, h2, h1, span {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  }
+
+  .card-text {
+    font-weight: normal;
+    color: white;
+    font-family: titi;
+  }
+
+  .card-title {
+    font-weight: normal;
+    color: white;
+    font-family: arkhip;
+  }
+
+  .navbar {
+    background: white;
+  }
+
+  .voeten {
+    background: #FFFFFF;
+    height: 10vh;
+  }
+
+  #activenavlink {
+    color: #b14374;
+  }
+
+  #notactivelink {
+    color: #962557;
+  }
+
+  .link {
+    margin-bottom: -20px;
+  }
+
+  nav {
+    word-spacing: 80px;
+    box-shadow: 0px 0px 50px #282828;
+
+  }
+
+  #notactivelink:hover {
+    color: #b14374;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  .card {
+    margin-bottom: 0px;
+  }
+
+  .third {
+    background: #3E6AAF;
+    height: 100vh;
+  }
+
+  .fourth {
+    background: #962557;
+    height: 110vh;
+  }
+
+  .first {
+    background: #3E6AAF;
+    height: 100vh;
+  }
+
+  .second {
+    background: #FFFFFF;
+    height: 100vh;
+  }
+
+  .col-xl-12 {
+    width: 102.50%;
+    /*margin-left: -1.25%;*/
+    margin: 0;
+  }
+
+  #logo {
+    margin-bottom: 15px;
+  }
+
+  #fixedup {
+    margin-top: 170px;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .tekstBallon {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 10px 10px 10px 10px;
+    font-size: calc(0.60vw + 0.60vh + 0.2vmin);
+  }
+
+  .tekstBallon p {
+    z-index: 1;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 100px 0 100px;
+    border-color: white transparent transparent transparent;
+  }
+
+  .firstblockleft {
+    width: 50%;
+    padding: 10%;
+    padding-top: 5%;
+    background: white;
+    float: left;
+    color: #3E6AAF;
+    font-weight: bold;
+    font-size: 90%;
+    border-radius: 10px 10px 10px 10px;
+    max-height: 100%;
+  }
+
+  .firstblockright {
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+    width: 50%;
+    padding-top: 10%;
+    background: white;
+    max-height: 100%;
+  }
+
+  #one {
+    display: inline-block;
+    margin: 5px;
+    border-radius: 10px 0px 0px 0px;
+  }
+
+  #two {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  #three {
+    border-radius: 0px 10px 0px 0px;
+    display: inline-block;
+    margin: 5px;
+  }
+
+  #four {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  #five {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  #six {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  #seven {
+    display: inline-block;
+    margin: 5px;
+    border-radius: 0px 0px 0px 10px;
+  }
+
+  #eight {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  #nine {
+    display: inline-block;
+
+    margin: 5px;
+    border-radius: 0px 0px 10px 0px;
+
+  }
+
+  #one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
+    width: 25%;
+    height: 90px;
+    text-align: center;
+    float: left;
+    background: #3E6AAF;
+    color: white;
+    font-weight: bold;
+    font-size: calc(0.40vw + 0.40vh + 0.2vmin);
+  }
+
+  #vink {
+    display: inline-block;
+    color: red;
+  }
+
+
+}
+
+
+
+
+
+
+}

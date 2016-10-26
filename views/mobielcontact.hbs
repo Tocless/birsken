@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>{{title}}</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mobielcontact.css">
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    {{!-- <link rel="stylesheet" href="./public/stylesheets/mobiel.css"> --}}
+
+    <meta name="theme-color" content="#962557">
+    <script src="https://use.fontawesome.com/51c9181800.js"></script>
+
+
+
+  </head>
+
+  <body>
+    <!-- NAVIGATIE BALK -->
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- logo -->
+      <div class="navbar-header">
+        <!--  -->
+        <a class="pull-right navbar-brand" href="#">
+          <img src="/images/LOGOBIRSKEN2.svg"/>
+        </a>
+
+        <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="mainnavbar">
+        <ul class="nav navbar-nav">
+
+          <li><a id="hamburger" href="/mobiel">home</a></li>
+          <li><a id="hamburger" href="/mobiel/over">over</a></li>
+          <li><a id="hamburger" href="/mobiel/diensten">diensten</a></li>
+          <li><a id="hamburger" href="/mobiel/contact">contact</a></li>
+
+        </ul>
+      </nav>
+
+    <div class="container-fluid">
+
+      <div class="form-group">
+  <label for="usr">Naam:</label>
+  <input type="text" placeholder="John Doe" class="form-control" id="naam">
+  </div>
+  <div class="form-group">
+  <label for="pwd">E-Mail addres:</label>
+  <input type="email" placeholder="Johndoe@gmail.com" class="form-control" id="email">
+  <div class="form-group">
+    <label for="comment">Bericht:</label>
+    <textarea class="form-control" rows="5" id="bericht"></textarea>
+    <button type="button" class="btn btn-default submit">Verzenden</button>
+
+  </div>
+
+</div>
+
+
+ <br>
+
+
+
+  </div>
+
+
+
+  <div class="telefoon">
+
+    <div class="contact"><center><a href="mailto:info@birsken.nl"><i class="fa fa-envelope" aria-hidden="true">info@birsken.nl</i></center></div>
+    <div class="contact"><center><a href="tel:+31613052030"><i class="fa fa-phone" aria-hidden="true">+31613052030</i></a></center></div>
+  </div>
+
+
+  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBF0HexUlRYzGiyfLOr6SlJKTJuA1BREN0'></script><div style='overflow:hidden;height:50vh;width:100vw;'><div id='gmap_canvas' style='height:60vh;width:100vw;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/nl'>Maps-Generator.com</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=6c11a07d906f1bfea1b82737dbd745ecc9481f13'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(53.2126461,6.598206399999981),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(53.2126461,6.598206399999981)});infowindow = new google.maps.InfoWindow({content:'<strong>Birsken</strong><br>Osloweg 35A<br>9723 BG Groningen<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+
+  	<script>
+    $(document).ready(function(){
+      $(".submit").click(function(e){
+        e.preventDefault();
+      var naam = $("#naam").val();
+      var email = $("#email").val();
+      var bericht = $("#bericht").val();
+
+      if (naam == "" || email == "" || bericht == "") {
+        return alert("Vul aub alle velden in");
+      }
+
+var email = {
+  adres: email,
+  naam: naam,
+  bericht: bericht
+};
+
+$.ajax({
+  type: 'POST',
+  data: JSON.stringify(email),
+      contentType: 'application/json',
+              url: '/endpoint',
+              success: function(data) {
+
+              }
+          });
+
+          $("#naam").val("");
+          $("#email").val("");
+          $("#bericht").val("");
+          alert("U bericht is veronden dank u voor uw bericht")
+
+    });
+    });
+
+
+    </script>
+  </body>
+</html>
