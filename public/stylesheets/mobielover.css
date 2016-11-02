@@ -186,3 +186,7 @@ span {
   margin-left: 3.5%;
   color: #972557;
 }
+
+#vink-pls {
+  visibility: hidden;
+}
