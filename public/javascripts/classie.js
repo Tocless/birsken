@@ -2,11 +2,18 @@ $(document).on("scroll", function() {
 
 	if($(document).scrollTop()>100) {
 		$("header").removeClass("large").addClass("small");
+		$(".matchmaking").slideUp(100);
 	} else {
 		$("header").removeClass("small").addClass("large");
+		$(".matchmaking").show();
 	}
 
+
+
 });
+
+
+
 
 
 
@@ -27,6 +34,6 @@ $(document).on("scroll", function() {
         $('.logo').removeClass('logoshrink');
         $('.logo').addClass('logogrow');
         $('.social').removeClass('socialshrink');
-        $('.social').addClass('socialgrow');
+        $('.matchmaking').addClass('socialgrow');
     }
 });*/

@@ -8,7 +8,7 @@
  * @link http://fabien-d.github.com/alertify.js/
  * @module alertify
  * @version 0.3.11
- */
+ *//*
 (function (global, undefined) {
 	"use strict";
 
