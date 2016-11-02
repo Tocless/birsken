@@ -66,13 +66,34 @@ app.get('/mobiel/contact', function(req, res, next) {
 
 app.post('/endpoint', function(req, res){
 var email = req.body;
-var mailOptions = {
-    from: '"Alex van der Meer" < alexvandermeer@birsken.com>', // sender address
+
+// var mailOptions = {
+//     from: '"Alex van der Meer" <alexvandermeer@birsken.com>', // sender address
+//     to: email.adres, // list of receivers
+//     subject: email.naam, // Subject line
+//     html: email.bericht // html body
+// };
+
+
+var mailOptionsOut = {
+    from: '"Alex van der Meer" <alexvandermeer@birsken.com>', // sender address
     to: email.adres, // list of receivers
-    subject: email.naam, // Subject line
-    html: email.bericht // html body
+    subject: "Email bevestiging", // Subject line
+    html: "<bold>Een copy van u email aan info@birsken.com</bold><br><br>" + email.bericht
 };
-transporter.sendMail(mailOptions)
+
+
+var mailOptionsIn = {
+    from: '"'+email.naam+'" <'+email.adres+'>', // sender address
+    to: 'alexvandermeer@birsken.com', // list of receivers
+    subject: email.naam, // Subject line
+    html: email.bericht
+};
+
+transporter.sendMail(mailOptionsOut)
+transporter.sendMail(mailOptionsIn)
+
+
 });
 
 
