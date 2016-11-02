@@ -17,6 +17,7 @@ var server = app.listen(3000);
 var io = require('socket.io').listen(server);
 var request = require("request");
 var YouTube = require('youtube-node');
+var nodemailer = require('nodemailer');
 var youTube = new YouTube();
 youTube.setKey('AIzaSyDq59vMwlHRFGZknBDicOzw9sPH1IKcEAM');
 var nowtime = 'test';
@@ -25,48 +26,15 @@ var nowtime = 'test';
 
 
 
-function convert_time(duration) {
-    var a = duration.match(/\d+/g);
 
-    if (duration.indexOf('M') >= 0 && duration.indexOf('H') == -1 && duration.indexOf('S') == -1) {
-        a = [0, a[0], 0];
-    }
-
-    if (duration.indexOf('H') >= 0 && duration.indexOf('M') == -1) {
-        a = [a[0], 0, a[1]];
-    }
-    if (duration.indexOf('H') >= 0 && duration.indexOf('M') == -1 && duration.indexOf('S') == -1) {
-        a = [a[0], 0, 0];
-    }
-
-    duration = 0;
-
-    if (a.length == 3) {
-        duration = duration + parseInt(a[0]) * 3600;
-        duration = duration + parseInt(a[1]) * 60;
-        duration = duration + parseInt(a[2]);
-    }
-
-    if (a.length == 2) {
-        duration = duration + parseInt(a[0]) * 60;
-        duration = duration + parseInt(a[1]);
-    }
-
-    if (a.length == 1) {
-        duration = duration + parseInt(a[0]);
-    }
-    return duration
-}
-
-
-var connection = mysql.createConnection({
-  host: '198.211.124.118',
-  user: 'twitchcontroller',
-  password: 'Broertjeoktober6',
-  database: 'Farm'
+var transporter = nodemailer.createTransport({
+    host: 'web01.viaict.nl',
+    port: 587,
+    auth: { user: 'alexvandermeer@birsken.com', pass: '#svNJlmYVnEx9' },
+    secure: false,
+    tls: {    rejectUnauthorized: false}
 });
 
-connection.connect();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -80,17 +48,61 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-
-
-
-
-
-app.get('/', function(req, res, next) {
-connection.query("SELECT * FROM body", function(err, text) {
-  res.render('index', {body:text[0]})
+app.get('/mobiel', function(req, res, next) {
+  res.render('mobiel', {title: 'Birsken'})
 });
+
+app.get('/mobiel/over', function(req, res, next) {
+  res.render('mobielover', {title: 'Birsken'})
 });
+
+app.get('/mobiel/diensten', function(req, res, next) {
+  res.render('mobieldiensten', {title: 'Birsken'})
+});
+
+app.get('/mobiel/contact', function(req, res, next) {
+  res.render('mobielcontact', {title: 'Birsken'})
+});
+
+app.post('/endpoint', function(req, res){
+var email = req.body;
+
+// var mailOptions = {
+//     from: '"Alex van der Meer" <alexvandermeer@birsken.com>', // sender address
+//     to: email.adres, // list of receivers
+//     subject: email.naam, // Subject line
+//     html: email.bericht // html body
+// };
+
+
+var mailOptionsOut = {
+    from: '"Alex van der Meer" <alexvandermeer@birsken.com>', // sender address
+    to: email.adres, // list of receivers
+    subject: "Email bevestiging", // Subject line
+    html: "<bold>Een copy van u email aan info@birsken.com</bold><br><br>" + email.bericht
+};
+
+
+var mailOptionsIn = {
+    from: '"'+email.naam+'" <'+email.adres+'>', // sender address
+    to: 'alexvandermeer@birsken.com', // list of receivers
+    subject: email.naam, // Subject line
+    html: email.bericht
+};
+
+transporter.sendMail(mailOptionsOut, function(err) {
+  if (err) {
+    console.log(err);
+
+  }
+
+})
+transporter.sendMail(mailOptionsIn)
+
+
+});
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -117,7 +129,7 @@ if (app.get('env') === 'development') {
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
   res.status(err.status || 500);
-  res.render('error', {
+  res.render('index', {
     message: err.message,
     error: {}
   });
